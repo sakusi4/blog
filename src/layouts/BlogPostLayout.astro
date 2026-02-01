@@ -173,6 +173,20 @@ const readingTime = Math.max(1, Math.ceil(words / 200));
                 color: #888;
                 margin-top: 4px;
             }
+
+            /* Comments */
+            .comments {
+                margin-top: 60px;
+                padding-top: 30px;
+                border-top: 1px solid #e5e5e5;
+            }
+
+            .comments h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: #333;
+            }
         </style>
     </head>
     <body>
@@ -217,6 +231,35 @@ const readingTime = Math.max(1, Math.ceil(words / 200));
                     </section>
                 )
             }
+
+            <!-- Comments -->
+            <section class="comments">
+                <h3>Comments</h3>
+                <div id="disqus_thread"></div>
+            </section>
         </div>
+
+        <script
+            is:inline
+            define:vars={{ pageUrl: Astro.url.href, pageId: frontmatter.title }}
+        >
+            var disqus_config = function () {
+                this.page.url = pageUrl;
+                this.page.identifier = pageId;
+            };
+            (function () {
+                var d = document,
+                    s = d.createElement("script");
+                s.src = "https://junpark.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript
+            >Please enable JavaScript to view the <a
+                href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+            ></noscript
+        >
     </body>
 </html>
