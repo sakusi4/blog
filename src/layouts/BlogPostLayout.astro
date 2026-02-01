@@ -23,7 +23,15 @@ const readingTime = Math.max(1, Math.ceil(words / 200));
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{frontmatter.title}</title>
-        <style>
+        <style is:global>
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                overflow-x: hidden;
+            }
+
             body {
                 font-family: -apple-system, BlinkMacSystemFont, sans-serif;
                 margin: 0;
@@ -36,6 +44,7 @@ const readingTime = Math.max(1, Math.ceil(words / 200));
             .wrapper {
                 max-width: 700px;
                 margin: 0 auto;
+                overflow-wrap: break-word;
             }
 
             .back {
@@ -93,12 +102,40 @@ const readingTime = Math.max(1, Math.ceil(words / 200));
                 color: #4f46e5;
                 text-decoration: underline;
                 text-underline-offset: 2px;
+                word-break: break-all;
             }
 
             .content img {
                 max-width: 100%;
+                height: auto;
+                display: block;
                 border-radius: 4px;
                 margin: 24px 0;
+            }
+
+            /* Mobile Responsive */
+            @media (max-width: 600px) {
+                body {
+                    padding: 30px 16px;
+                }
+
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+                .meta {
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+
+                .content h2 {
+                    font-size: 1.1rem;
+                }
+
+                .content pre {
+                    padding: 12px;
+                    font-size: 0.8em;
+                }
             }
 
             .content pre {
