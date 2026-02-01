@@ -40,7 +40,7 @@ Thank god. It fits perfectly. If it didn't fit, I would refund it as well
 
 This is the holy place for cyclists in Dubai. The total course distance is over 100km. I usually ride 50km~70km every weekend.
 
-https://www.google.com/maps/place/Al+Qudra+Cycle+Track+-+Al+Yalayis+3+-+Dubai/@24.9490549,55.2842585,13.11z/data=!4m6!3m5!1s0x3e5f7a72e6fac31b:0xb4fefcbefd74870e!8m2!3d24.9723542!4d55.3368269!16s%2Fg%2F12hk_zbt_?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58079.76!2d55.28!3d24.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f7a72e6fac31b%3A0xb4fefcbefd74870e!2sAl%20Qudra%20Cycle%20Track!5e0!3m2!1sen!2sae!4v1706816400000" width="100%" height="300" style="border:0; border-radius:8px; margin: 20px 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ![](./7.jpeg)
 After working out. Taking protein is mandatory :)
